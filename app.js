@@ -12,7 +12,7 @@ const auth = require("./auth");
 app.use(helmet());
 var options = {
 	host: 'localhost',
-	port: 3306,
+	port: process.env.port || 3306,
 	user: 'root',
 	password: '',
 	database: 'hotelmanagement',
